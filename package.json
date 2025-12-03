@@ -1,0 +1,51 @@
+{
+  "name": "t-web-501-tls_6",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/**/*"
+  ],
+  "description": "Web jobboard as Epitech pré-Msc project",
+  "contributors": [
+    "Leroy Alexandre",
+    "Gaspard Yannis",
+    "Boubée Jérémy"
+  ],
+  "homepage": "https://github.com/EpitechMscProPromo2028/T-WEB-501-TLS_6#readme",
+  "bugs": {
+    "url": "https://github.com/EpitechMscProPromo2028/T-WEB-501-TLS_6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechMscProPromo2028/T-WEB-501-TLS_6.git"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,tsx,js,jsx"
+    }
+  },
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "npm run clean && npm run build --workspaces && cp -v apps/back/.env dist/",
+    "clean": "rm -rf dist/",
+    "dev:back": "npm run dev --workspace apps/back",
+    "dev:front": "npm run dev --workspace apps/front",
+    "format": "npm run format --workspaces",
+    "format:check": "npm run format:check --workspaces",
+    "migrate": "npm run migrate --workspace apps/back",
+    "migrate:clean": "npm run migrate:clean --workspace apps/back",
+    "preview": "npm run preview --workspace apps/front",
+    "watch": "npm-watch",
+    "start": "npm run build && npm run migrate && concurrently --kill-other-on-fails --handle-input \"node dist/back/server.js\" \"npm run preview\""
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

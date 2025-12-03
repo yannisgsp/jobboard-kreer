@@ -1,0 +1,140 @@
+.user-profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  max-width: 40rem;
+  width: 90%;
+  height: 30rem;
+  max-height: 60%;
+  background-color: #868686;
+  border: solid 0.3px;
+  border-color: white;
+  opacity: 0.8;
+  border-radius: 3rem;
+  color: white;
+  gap: 4rem;
+}
+
+.avatar {
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.img-responsive {
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 3rem;
+}
+
+.user-details {
+  margin-top: 3rem;
+}
+
+.user-name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role {
+  background-color: rgb(47, 117, 32);
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  text-align: center;
+  align-self: center;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.separator {
+  width: 4.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.separator-2 {
+  width: 2.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.separator-3 {
+  width: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.user-description {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.user-email {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+#cv-upload {
+  display: none;
+}
+
+.cv-label {
+  font-size: 0.8rem;
+  background-color: rgb(36, 34, 152);
+  border-radius: 0.5rem;
+  opacity: 0.6;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+/* .user-profile p {
+  font-size: 24px;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  font-size: 14px !important;
+  background-color: grey;
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+  height: 20px;
+}
+
+.user-details {
+  display: flex;
+  column-gap: 10px;
+}
+
+.avatar {
+  width: 200px;
+  height: auto;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.user-infos {
+  font-size: 24px;
+}
+
+.user-name {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+} */
+
+@media screen and (max-width: 767px) {
+}

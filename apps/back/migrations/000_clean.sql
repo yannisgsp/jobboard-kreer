@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS Favorites, Messages, Conversations, Applications, Jobs, Companies, Users;

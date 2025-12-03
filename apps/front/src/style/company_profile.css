@@ -1,0 +1,23 @@
+.user-profile {
+  padding: 2em;
+}
+
+.user-details {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.role {
+  margin-right: 2em;
+}
+
+.company-description {
+  text-wrap: wrap;
+  overflow: hidden;
+}
+
+.job-offer-company-profile {
+  padding: 1.5em;
+}

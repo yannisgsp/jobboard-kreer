@@ -1,0 +1,31 @@
+.login-form {
+  color: grey;
+}
+
+.login-form h2 {
+  font-size: large;
+  text-align: center;
+}
+
+.login-form button {
+  background-color: grey;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+}
+
+.login-form button:hover {
+  background-color: white;
+  color: grey;
+}
+
+.login-form > .popup-content {
+  position: relative;
+}
+
+.login-form > .popup-content > .close-btn {
+  position: absolute;
+  top: -48px;
+  right: 4px;
+  background-color: transparent;
+}

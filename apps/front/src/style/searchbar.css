@@ -1,0 +1,12 @@
+.searchbar-div {
+  width: 40vw;
+  color: rgb(173, 173, 173);
+  font-size: 1vw;
+  margin-top: 2rem;
+  border: solid 0.3px;
+  border-radius: 3rem;
+  border-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  box-shadow: 1px 1px 30px rgba(128, 128, 128, 0.3);
+  outline-color: rgb(171, 171, 171);
+}

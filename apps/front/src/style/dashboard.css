@@ -1,0 +1,104 @@
+.main {
+  width: 80%;
+  overflow-x: hidden;
+}
+
+.table-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: blue grey;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-container::-webkit-scrollbar {
+  height: 8px;
+}
+.table-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Table normale */
+.data-table {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Table applications : scroll horizontal si nécessaire */
+.applications-table {
+  display: block; /* pour permettre le scroll horizontal */
+  overflow-x: auto;
+  max-width: 100%; /* ne dépasse pas le conteneur */
+  white-space: nowrap; /* empêche le contenu de revenir à la ligne */
+}
+
+.applications-table thead,
+.applications-table tbody {
+  display: table; /* conserve l’alignement colonnes */
+  width: 100%;
+  table-layout: auto;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.data-table thead {
+  position: sticky;
+  top: 0;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.data-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.data-table button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.filters-btns {
+  display: flex;
+  align-items: center;
+}
+
+.filters-btns select {
+  height: 25px;
+}
+
+.data-table button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 1024px) {
+}
